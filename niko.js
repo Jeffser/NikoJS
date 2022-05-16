@@ -22,7 +22,7 @@ function handleMouseMove(event) {
 }
 function getMousePosition() {var pos = mousePos;}
 var NikoSprite = [1, 0]
-var NikoPosition = [10, 10]
+var NikoPosition = [10, 0]
 function start(){
     console.log('NikoJS by Jeffser')
     Niko = document.createElement('img')
