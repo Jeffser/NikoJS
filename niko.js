@@ -33,7 +33,7 @@ var NikoPosition = [10, 10]
 function start(){
     Niko = document.createElement('img')
     document.body.appendChild(Niko)
-    Niko.src = 'sprites/' + NikoSprite[0] + NikoSprite[1] + '.png'
+    Niko.src = 'https://raw.githubusercontent.com/Jeffser/NikoJS/master/sprites/' + NikoSprite[0] + NikoSprite[1] + '.png'
     Niko.style.position = 'fixed'
     Niko.style.left = NikoPosition[0] + 'px'
     Niko.style.bottom = NikoPosition[1] + 'px'
@@ -59,7 +59,7 @@ function start(){
             NikoSprite[0] = 0
             NikoSprite[1] = 0
         }
-        Niko.src = 'sprites/' + NikoSprite[0] + NikoSprite[1] + '.png'
+        Niko.src = 'https://raw.githubusercontent.com/Jeffser/NikoJS/master/sprites/' + NikoSprite[0] + NikoSprite[1] + '.png'
         Niko.style.left = NikoPosition[0] + 'px'
     }
 }
