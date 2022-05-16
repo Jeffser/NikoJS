@@ -35,7 +35,7 @@ function start(){
     Niko.onclick = function(){alert('Hello World!')}
     let id = null; 
     clearInterval(id);
-    id = setInterval(frame, 150);
+    id = setInterval(frame, 100);
     function frame() {
         if (mousePos.x > NikoPosition[0] && mousePos.x > NikoPosition[0] + 5) {
             NikoPosition[0] += 10
