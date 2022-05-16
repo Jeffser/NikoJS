@@ -24,6 +24,7 @@ function getMousePosition() {var pos = mousePos;}
 var NikoSprite = [1, 0]
 var NikoPosition = [10, 10]
 function start(){
+    console.log('NikoJS by Jeffser')
     Niko = document.createElement('img')
     document.body.appendChild(Niko)
     Niko.src = 'https://raw.githubusercontent.com/Jeffser/NikoJS/master/sprites/' + NikoSprite[0] + NikoSprite[1] + '.png'
