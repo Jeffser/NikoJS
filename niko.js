@@ -37,21 +37,23 @@ function start(){
     clearInterval(id);
     id = setInterval(frame, 100);
     function frame() {
-        if (mousePos.x > NikoPosition[0] && mousePos.x > NikoPosition[0] + 5) {
-            NikoPosition[0] += 10
-            NikoSprite[0] = 2
-            if (NikoSprite[1]<4){NikoSprite[1] += 1}
-            else{NikoSprite[1] = 0}
-        }
-        else if (mousePos.x < NikoPosition[0] && mousePos.x < NikoPosition[0] - 5) {
-            NikoPosition[0] -= 10
-            NikoSprite[0] = 3
-            if (NikoSprite[1]<4){NikoSprite[1] += 1}
-            else{NikoSprite[1] = 0}
-        }
-        else{
-            NikoSprite[0] = 0
-            NikoSprite[1] = 0
+        if (mousePos){
+            if (mousePos.x > NikoPosition[0] && mousePos.x > NikoPosition[0] + 5) {
+                NikoPosition[0] += 10
+                NikoSprite[0] = 2
+                if (NikoSprite[1]<4){NikoSprite[1] += 1}
+                else{NikoSprite[1] = 0}
+            }
+            else if (mousePos.x < NikoPosition[0] && mousePos.x < NikoPosition[0] - 5) {
+                NikoPosition[0] -= 10
+                NikoSprite[0] = 3
+                if (NikoSprite[1]<4){NikoSprite[1] += 1}
+                else{NikoSprite[1] = 0}
+            }
+            else{
+                NikoSprite[0] = 0
+                NikoSprite[1] = 0
+            }
         }
         Niko.src = 'https://raw.githubusercontent.com/Jeffser/NikoJS/master/sprites/' + NikoSprite[0] + NikoSprite[1] + '.png'
         Niko.style.left = NikoPosition[0] + 'px'
